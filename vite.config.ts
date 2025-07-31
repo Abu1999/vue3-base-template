@@ -11,7 +11,6 @@ const timeStamp = new Date().getTime()
 // https://vite.dev/config/
 export default defineConfig({
   base: '/',
-  envDir: './env', // 自定义env目录
   plugins: [
     vue(),
     vueJsx(),

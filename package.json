@@ -20,6 +20,7 @@
     "commit": "git add -A && git-cz"
   },
   "dependencies": {
+    "@commitlint/config-conventional": "^19.8.1",
     "pinia": "^3.0.3",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
@@ -53,7 +54,7 @@
     "vitest": "^3.2.4",
     "vue-tsc": "^3.0.4"
   },
-   "lint-staged": {
+  "lint-staged": {
     "*.{js,ts}": [
       "eslint --fix",
       "prettier --write"
