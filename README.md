@@ -1,45 +1,39 @@
-# base
+## 项目技术与框架概览
 
-This template should help get you started developing with Vue 3 in Vite.
+# 核心框架
 
-## Recommended IDE Setup
+Vue 3
+Vue Router
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+# 状态与样式
 
-## Type Support for `.vue` Imports in TS
+Pinia
+Tailwind CSS
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+# 网络与构建
 
-## Customize configuration
+Axios
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+# 类型与语言
 
-## Project Setup
+TypeScript（类型支持）
 
-```sh
-pnpm install
-```
+# 代码规范
 
-### Compile and Hot-Reload for Development
+检查工具：ESLint
+格式化 Prettier
 
-```sh
-pnpm dev
-```
+# 提交与自动化
 
-### Type-Check, Compile and Minify for Production
+husky（Git 钩子）
+commitlint（提交规范）
+cz-git（交互式提交）
 
-```sh
-pnpm build
-```
+# 其他工具
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+unplugin-auto-import（自动导入）
+vite-plugin-vue-devtools（调试工具）
 
-```sh
-pnpm test:unit
-```
+# 环境要求
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+Node.js：^20.19.0 或 >=22.12.0
