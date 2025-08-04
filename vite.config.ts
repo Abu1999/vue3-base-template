@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueDevTools from 'vite-plugin-vue-devtools'
+import tailwindcss from '@tailwindcss/vite'
 //自动引入插件
 import AutoImport from 'unplugin-auto-import/vite'
 
@@ -15,8 +16,9 @@ export default defineConfig({
     vue(),
     vueJsx(),
     vueDevTools(),
+    tailwindcss(),
     AutoImport({
-      imports: ['vue'],
+      imports: ['vue', 'vue-router', 'pinia'],
       dts: 'src/auto-import.d.ts',
     }),
   ],
