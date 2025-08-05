@@ -59,5 +59,10 @@
     "commitizen": {
       "path": "node_modules/cz-git"
     }
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }

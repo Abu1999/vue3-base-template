@@ -1,7 +1,17 @@
 <template>
-  <div class="bg-red-400">111</div>
+  <div class="bg-red-400" @click="$router.push('/test')">111</div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { getData } from '@/api/home'
 
-<style scoped></style>
+onMounted(() => {
+  getData()
+    .then((res) => {
+      console.log(res)
+    })
+    .catch((error) => {
+      console.error('Error fetching data:', error)
+    })
+})
+</script>

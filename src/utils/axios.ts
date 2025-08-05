@@ -7,6 +7,9 @@ import axios, {
 // import { MessagePlugin } from 'tdesign-vue-next'
 // import { useUserInfoStore } from '@/stores'
 import router from '@/router'
+
+// 基础URL从环境变量获取
+const BASE_URL: string = import.meta.env.VITE_BASE_URL || ''
 // 数据返回的接口
 // 定义请求响应参数，不含data
 interface Result {
@@ -19,15 +22,16 @@ interface ResultData<T> extends Result {
   data?: T
 }
 enum RequestEnums {
-  TIMEOUT = 20000,
-  OVERDUE = 401, // 登录失效
+  TIMEOUT = 20000, // 超时时间
+  OVERDUE = 4001, // 登录失效
+  NOTLOGIN = 401, // 未登录
   FAIL = 999, // 请求失败
   SUCCESS = 200, // 请求成功
 }
 
 const config = {
   // 默认地址
-  baseURL: '',
+  baseURL: BASE_URL,
   // 设置超时时间
   timeout: RequestEnums.TIMEOUT as number,
   // 跨域时候允许携带凭证
