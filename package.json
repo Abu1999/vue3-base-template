@@ -52,6 +52,7 @@
     "typescript": "~5.8.0",
     "unplugin-auto-import": "^19.3.0",
     "vite": "npm:rolldown-vite@latest",
+    "vite-plugin-koa-mocks": "^1.0.0",
     "vite-plugin-vue-devtools": "^8.0.0",
     "vue-tsc": "^3.0.4"
   },

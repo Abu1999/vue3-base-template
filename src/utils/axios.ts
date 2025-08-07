@@ -9,7 +9,7 @@ import axios, {
 import router from '@/router'
 
 // 基础URL从环境变量获取
-const BASE_URL: string = import.meta.env.VITE_BASE_URL || ''
+const BASE_URL: string = import.meta.env.VITE_BASE_URL || '/mock'
 // 数据返回的接口
 // 定义请求响应参数，不含data
 interface Result {

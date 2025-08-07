@@ -7,6 +7,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 //自动引入插件
 import AutoImport from 'unplugin-auto-import/vite'
+import KoaMock from 'vite-plugin-koa-mocks'
 
 const timeStamp = new Date().getTime()
 // https://vite.dev/config/
@@ -21,6 +22,11 @@ export default defineConfig({
       imports: ['vue', 'vue-router', 'pinia'],
       dts: 'src/auto-import.d.ts',
     }),
+    KoaMock({
+      // port: 8580,
+      // mockDir: 'mocks',
+      // proxyKeys: ['/mock'],
+    }), // mock服务
   ],
   resolve: {
     alias: {
