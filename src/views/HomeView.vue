@@ -1,6 +1,8 @@
 <template>
-  <div class="box flex justify-center items-center h-10" @click="$router.push('/test')">
-    点击跳转
+  <div>
+    <p class="test-red">这段文字应为红色（纯 CSS 测试）</p>
+    <p class="test-tailwind">这段文字应有蓝色背景（Tailwind 测试）</p>
+    <p class="text-green-500 font-bold">这段文字应为绿色粗体（直接使用 Tailwind 类）</p>
   </div>
 </template>
 
@@ -18,12 +20,4 @@ onMounted(() => {
 })
 </script>
 
-<style scoped lang="scss">
-/* 定义变量与值 */
-$bgcolor: lightblue;
-
-/* 使用变量 */
-.box {
-  background-color: $bgcolor;
-}
-</style>
+<style scoped lang="scss"></style>
