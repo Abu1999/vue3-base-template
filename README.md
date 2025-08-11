@@ -9,6 +9,7 @@ Vue Router
 
 Pinia
 Tailwind CSS
+Sass
 
 ### 网络与构建
 
@@ -33,6 +34,7 @@ cz-git（交互式提交）
 
 unplugin-auto-import（自动导入）
 vite-plugin-vue-devtools（调试工具）
+vite-plugin-koa-mocks (模拟数据工具)
 
 ### 环境要求
 
