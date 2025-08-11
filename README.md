@@ -61,6 +61,8 @@ yarn build
 ```
 
 ## 📂 项目结构
+
+```
 vue3-base-template/
 ├── .husky/              # Git 钩子配置
 ├── .vscode/             # VS Code 工作区配置
@@ -85,12 +87,13 @@ vue3-base-template/
 ├── package.json         # 项目依赖与脚本
 ├── vite.config.ts       # Vite 配置
 └── tsconfig.json        # TypeScript 配置
+```
 
 ## 🔧 开发工具配置
-* 代码检查：pnpm lint - 运行 ESLint 检查代码
-* 代码格式化：pnpm format - 使用 Prettier 格式化代码
-* 提交规范：提交代码时需遵循 Conventional Commits 规范，通过 cz-git 交互式生成提交信息
 
+- 代码检查：pnpm lint - 运行 ESLint 检查代码
+- 代码格式化：pnpm format - 使用 Prettier 格式化代码
+- 提交规范：提交代码时需遵循 Conventional Commits 规范，通过 cz-git 交互式生成提交信息
 
 ## 贡献
 
