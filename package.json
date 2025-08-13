@@ -21,6 +21,7 @@
     "commit": "git add -A && git-cz"
   },
   "dependencies": {
+    "@vueuse/core": "^13.6.0",
     "axios": "^1.11.0",
     "pinia": "^3.0.3",
     "pinia-plugin-persistedstate": "^4.5.0",
